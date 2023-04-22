@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 /**
- * main - A program that prints a text according to number.
- * Return: Always (Success)
+ * main - A program that prints the last digit of randomly generated number
+ * and weather its greater than 5, less than 6 or 0.
  *
+ * Return: Always (Success)
  */
 
 int main(void)
 
 {
-	int n, lastd;
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastd = n % 10;
 
 	if ((n % 10) > 5)
 	{
@@ -23,7 +23,7 @@ int main(void)
 	}
 	else if ((n % 10) < 6 && (n % 10) != 0)
 	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+		printf("last digit of %d is %d and is less than 6\n", n, n % 10);
 	}
 	else
 	{
