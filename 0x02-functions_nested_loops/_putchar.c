@@ -1,9 +1,9 @@
 #include <unistd.h>
 /**
- * main - Entry point
- * Description: 'the character to print'
- * Return: Always 1
- * on error, -1 is returned, and error is set appropiate
+ * _putchar - write the character c to stdout
+ * &c: the character to print
+ * Return: on success 1
+ * on error, -1 is returned, and error is set approximately
  */
 int _putchar(char c)
 {
